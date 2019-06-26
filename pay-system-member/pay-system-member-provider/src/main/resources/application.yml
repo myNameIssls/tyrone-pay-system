@@ -1,0 +1,9 @@
+server:
+  port: 7010
+spring:
+  application:
+    name: pay-system-member-provider
+eureka:
+  client:
+    service-url:
+      defaultZone: http://payhost:8761/eureka/

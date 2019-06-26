@@ -1,0 +1,21 @@
+server:
+  port: 8100
+spring:
+  application:
+    name: pay-system-gateway
+  cloud:
+    gateway:
+      routes:
+      - id: jd_route
+        uri: http://www.jd.com
+        predicates:
+          - Path=/jingdong
+      discovery:
+        locator:
+          enabled: true # 开户基于服务发现的路由规则，通过 serviceId转发到具体的服务实例
+          lower-case-service-id: true # 当服务注册中心为 Eureka 时，设置为 true表示开户用小写的serviceId进行基于服务路由的转发
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://payhost:8761/eureka/
