@@ -11,12 +11,13 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/member")
 public class MemberTestController {
 
-    @Autowired private MemberTestFeignService memberTestFeignService;
+//    @Autowired private MemberTestFeignService memberTestFeignService;
 
     @GetMapping("/test")
     public String test(){
-
-        String msg = memberTestFeignService.test();
+        System.out.println("进入测试。。。。。。。。。。。");
+        String msg = "Hello world...";
+//        String msg = memberTestFeignService.test();
 
         return msg;
     }

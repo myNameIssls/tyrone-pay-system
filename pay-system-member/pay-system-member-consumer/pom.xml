@@ -15,7 +15,7 @@
         <dependency>
             <groupId>cn.tyrone</groupId>
             <artifactId>pay-system-member-api</artifactId>
-            <version>${pay-version}</version>
+            <version>1.0-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
