@@ -18,7 +18,7 @@ import org.springframework.context.annotation.ComponentScan;
 @SpringBootApplication
 @EnableDiscoveryClient
 @EnableFeignClients(basePackages = {"cn.tyrone.pay.member.api.*"})
-@ComponentScan(basePackages = {"cn.tyrone.pay.member.api.*"})
+@ComponentScan(basePackages = {"cn.tyrone.pay.member.**.*"})
 public class PaySystemMemberConsumerApplication implements CommandLineRunner {
 
     Logger logger = LoggerFactory.getLogger(this.getClass());

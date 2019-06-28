@@ -10,6 +10,11 @@ spring:
         uri: http://www.jd.com
         predicates:
           - Path=/jingdong
+      - id: pay-system-member-consumer_router
+        uri: lb://pay-system-member-consumer
+        predicates:
+          - Path=/member
+
       discovery:
         locator:
           enabled: true # 开户基于服务发现的路由规则，通过 serviceId转发到具体的服务实例
