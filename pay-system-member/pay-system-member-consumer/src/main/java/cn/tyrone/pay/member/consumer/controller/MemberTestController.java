@@ -16,7 +16,6 @@ public class MemberTestController {
     @GetMapping("/test")
     public String test(){
         System.out.println("进入测试。。。。。。。。。。。");
-//        String msg = "Hello world...";
         String msg = memberTestFeignService.test();
 
         return msg;
