@@ -7,9 +7,10 @@
     <groupId>cn.tyrone</groupId>
     <artifactId>pay-system</artifactId>
     <packaging>pom</packaging>
-    <version>${pay-version}</version>
+    <version>1.0-SNAPSHOT</version>
 
     <modules>
+        <module>../pay-system-transaction</module>
         <module>../pay-system-gateway</module>
         <module>../pay-system-service-register</module>
         <module>../pay-system-member</module>
