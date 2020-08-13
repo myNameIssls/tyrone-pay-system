@@ -1,0 +1,21 @@
+server:
+  port: 7001
+spring:
+  application:
+    name: pay-system-transaction-application
+  cloud:
+    nacos:
+      discovery:
+        server-addr: 127.0.0.1:8848
+        namespace: 82b6d362-f79b-473a-a5f5-932e292a5a66
+#      config:
+#        server-addr: 127.0.0.1:8848
+#        namespace: 82b6d362-f79b-473a-a5f5-932e292a5a66
+  main:
+    allow-bean-definition-overriding: true
+
+#dubbo:
+#  application:
+#    name: pay-system-transaction-application
+#  registry:
+#    address: nacos://127.0.0.1:8848

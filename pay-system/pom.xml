@@ -10,15 +10,18 @@
     <version>1.0-SNAPSHOT</version>
 
     <modules>
-        <module>../pay-system-transaction</module>
-        <module>../pay-system-gateway</module>
-        <module>../pay-system-service-register</module>
-        <module>../pay-system-member</module>
-        <module>../test</module>
+        <module>pay-system-common</module>
+        <module>pay-system-transaction</module>
+        <module>pay-system-gateway</module>
+        <module>pay-system-service-register</module>
+        <module>pay-system-member</module>
+        <module>test</module>
+        <module>pay-channel-extend</module>
+        <module>pay-core</module>
     </modules>
 
     <properties>
-        <pay-version>1.0-SNAPSHOT</pay-version>
+        <pay.version>1.0-SNAPSHOT</pay.version>
         <spring-boot-version>2.1.5.RELEASE</spring-boot-version>
         <spring-cloud-version>Greenwich.SR1</spring-cloud-version>
         <spring-cloud-alibaba-version>2.1.1.RELEASE</spring-cloud-alibaba-version>
@@ -51,6 +54,12 @@
                 <scope>import</scope>
             </dependency>
 
+            <dependency>
+                <groupId>cn.tyrone</groupId>
+                <artifactId>pay-channel-extend</artifactId>
+                <version>${pay.version}</version>
+            </dependency>
+
         </dependencies>
     </dependencyManagement>
 
@@ -67,21 +76,5 @@
             </plugin>
         </plugins>
     </build>
-
-    <repositories>
-        <repository>
-            <id>maven-ali</id>
-            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
-            <releases>
-                <enabled>true</enabled>
-            </releases>
-            <snapshots>
-                <enabled>true</enabled>
-                <updatePolicy>always</updatePolicy>
-                <checksumPolicy>fail</checksumPolicy>
-            </snapshots>
-        </repository>
-    </repositories>
-
 
 </project>
