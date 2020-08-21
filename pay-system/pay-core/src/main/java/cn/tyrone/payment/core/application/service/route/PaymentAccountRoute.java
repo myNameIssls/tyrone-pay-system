@@ -12,12 +12,13 @@ public class PaymentAccountRoute {
 
     @Autowired private ICpcnAdapterDomainService cpcnAdapterDomainService;
 
-    public Object openAccount(OpenAccountRequest request){
+    public OpenAccountResponse openAccount(OpenAccountRequest request){
 
         PaymentChannelEnum paymentChannelEnum = request.getPaymentChannelEnum();
 
         if (paymentChannelEnum.equals(PaymentChannelEnum.CPCN)) {
             OpenAccountResponse openAccountResponse = cpcnAdapterDomainService.openAccount(request);
+            return openAccountResponse;
         }
 
         return null;
