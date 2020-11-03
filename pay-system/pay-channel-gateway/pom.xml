@@ -9,22 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>pay-system-transaction</artifactId>
+    <artifactId>pay-channel-gateway</artifactId>
     <packaging>pom</packaging>
 
     <modules>
-        <module>pay-system-transaction-api</module>
-        <module>pay-system-transaction-service</module>
-        <module>pay-system-transaction-application</module>
+        <module>pay-channel-gateway-domain</module>
     </modules>
-
-    <dependencyManagement>
-        <dependencies>
-            <dependency>
-                <groupId>cn.tyrone</groupId>
-                <artifactId>pay-system-transaction-api</artifactId>
-            </dependency>
-        </dependencies>
-    </dependencyManagement>
-
 </project>

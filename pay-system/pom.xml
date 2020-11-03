@@ -11,13 +11,16 @@
 
     <modules>
         <module>pay-system-common</module>
-        <module>pay-system-transaction</module>
+        <module>pay-transaction</module>
         <module>pay-system-gateway</module>
         <module>pay-system-service-register</module>
         <module>pay-system-member</module>
         <module>test</module>
         <module>pay-channel-extend</module>
         <module>pay-core</module>
+        <module>pay-start</module>
+        <module>pay-account</module>
+        <module>pay-channel-gateway</module>
     </modules>
 
     <properties>
